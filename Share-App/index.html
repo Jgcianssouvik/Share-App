@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Profile Share Modal | Souvik Nandi</title>
+</head>
+
+<body>
+
+
+    <!--Top wrapper -->
+
+
+    <div class="">
+
+
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+        <!-- card wrapper -->
+        <div class="wrapper">
+
+            <div class="card-wrapper">
+
+                <div>
+                    <img src="/images/1656066396858.jpeg" alt="">
+                </div>
+
+                <div class="user-name">
+                    <h2>Souvik Nandi</h2>
+                </div>
+
+                <div class="designation">
+                    <h3>Student, Frontend Developer</h3>
+                </div>
+
+                <!-- for button 1 -->
+                <div class="bottom-group">
+
+                    <button class="btn-share btn-card" onclick="openModal()">
+                        <i class="fa-solid fa-share"></i>
+                        <div>Share My Profile</div>
+
+                    </button>
+
+
+                    <!-- for button 2 -->
+                    <button class="btn-follow btn-card">Follow Me</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Modal component -->
+
+        <div class="modal">
+
+            <div class="modal-header">
+                <h2>Share My Profile</h2>
+
+                <div>
+                    <i class="fa-solid fa-xmark close" onclick="closeModal()"></i>
+                </div>
+
+            </div>
+
+            <div>
+
+                <h3>Share this via</h3>
+
+                <div class="icon-container">
+                    <a href="https://www.facebook.com/souvik.nandi.9235" class="icon" id="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/souvik__nandi" class="icon" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/souvik-nandi-1279a2198" class="icon" id="twitter"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="#" class="icon" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="icon" id="telegram"><i class="fa-brands fa-telegram"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- overlay -->
+
+    <div class="overlay" onclick="closeModal()"></div>
+
+
+
+    <script src="https://kit.fontawesome.com/d310218577.js " crossorigin="anonymous "></script>
+    <script src="/index.js ">
+    </script>
+
+</body>
+
+</html>
